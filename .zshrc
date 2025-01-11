@@ -105,4 +105,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Make your prompt start at the bottom of the screen on startup
+print ${(pl:$LINES::\n:):-}
+# Cap the maximum number of lines for autocomplete to 6
+zstyle ':autocomplete:*:*' list-lines 6
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

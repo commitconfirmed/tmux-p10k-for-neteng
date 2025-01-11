@@ -4,6 +4,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 # Prompt avoidance
 ENV DEBIAN_FRONTEND=noninteractive
+ENV SHELL=/usr/bin/zsh
 
 # Install the necessary packages
 RUN apt-get update -y && apt-get install -y \
@@ -14,5 +15,5 @@ tmux \
 && rm -rf /var/lib/apt/lists/*
 
 # Install powerlevel10k and zsh-autocomplete
-RUN git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete
-RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+RUN git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git /home/vscode/.oh-my-zsh/custom/plugins/zsh-autocomplete
+RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /home/vscode/.oh-my-zsh/custom/themes/powerlevel10k

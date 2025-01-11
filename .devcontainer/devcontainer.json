@@ -6,13 +6,13 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "terminal.integrated.shell.linux": "/bin/zsh"
+                "terminal.integrated.defaultProfile.linux": "zsh"
             }
         },
             "extensions": [
-                "vscode.docker",
+                "ms-azuretools.vscode-docker",
                 "vscode.git"
             ]
     },
-    "postCreateCommand": "mkdir log && cp .p10k.zsh ~/.p10k.zsh && cp .zshrc ~/.zshrc && cp .tmux.conf ~/.tmux.conf && source ~/.zshrc"
+    "postCreateCommand": "mkdir -p log && cp .p10k.zsh ~/. && cp .zshrc ~/. && cp .tmux.conf ~/. && cp aliases.zsh ~/.oh-my-zsh/custom/. && source ~/.zshrc"
 }
