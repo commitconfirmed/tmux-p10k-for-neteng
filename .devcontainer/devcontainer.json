@@ -1,0 +1,18 @@
+{
+    "name": "Powerlevel10k + TMUX example",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/zsh"
+            }
+        },
+            "extensions": [
+                "vscode.docker",
+                "vscode.git"
+            ]
+    },
+    "postCreateCommand": "mkdir log && cp .p10k.zsh ~/.p10k.zsh && cp .zshrc ~/.zshrc && cp .tmux.conf ~/.tmux.conf && source ~/.zshrc"
+}
