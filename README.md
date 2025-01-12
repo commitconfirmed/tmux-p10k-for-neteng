@@ -19,7 +19,9 @@ This repo expands on the [tmux-for-neteng](https://github.com/commitconfirmed/tm
 
 ## Try it out
 
-Just click the "Open in GitHub Codespaces" button up the top!
+Just click the "Open in GitHub Codespaces" button up the top! Should see a terminal that looks similar to the below:
+
+![Codespaces terminal window](tmux-p10k-for-neteng.png)
 
 ## Installation
 
