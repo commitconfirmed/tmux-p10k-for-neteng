@@ -4,6 +4,8 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 # Prompt avoidance
 ENV DEBIAN_FRONTEND=noninteractive
+
+# Default to zsh
 ENV SHELL=/usr/bin/zsh
 
 # Install the necessary packages

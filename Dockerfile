@@ -34,7 +34,7 @@ RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTO
 # Copy my p10k configuration to skip the configuration wizard
 COPY .p10k.zsh /root/.p10k.zsh
 
-# Copy other configurations
+# Copy other configurations, see the README if you want to do this yourself manually
 COPY .zshrc /root/.zshrc
 COPY .tmux.conf /root/.tmux.conf
 COPY aliases.zsh /root/.oh-my-zsh/custom/aliases.zsh

@@ -77,7 +77,7 @@ plugins=(python golang zsh-autocomplete colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# User config
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

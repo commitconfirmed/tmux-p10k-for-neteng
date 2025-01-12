@@ -77,7 +77,9 @@ To use my tmux configuration, simply copy and paste the contents of the [.tmux.c
 
 ## Usage
 
-TMUX should automatically start when you SSH into your host, but if not you can simply execute `tmux -u attach -t COMMITCONFIRMED || tmux -u new -s COMMITCONFIRMED` replacing "POWER" with whatever name you want at the bottom. You can also just create an alias for this if you want.
+TMUX should automatically start when you SSH into your host if you have copied the [aliases.zsh](aliases.zsh) file into your setup. 
+
+If not you can simply execute `tmux -u attach -t COMMITCONFIRMED || tmux -u new -s COMMITCONFIRMED` replacing "COMMITCONFIRMED" with whatever name you want at the bottom. 
 
 Keybindings I've used as a personal preference, you can change this if you want in your own .tmux.conf file to suit your own preferences. Mousewheel scrolling and clicking of the tabs also should work.
 
